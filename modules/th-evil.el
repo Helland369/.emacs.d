@@ -34,9 +34,6 @@
   "dF" 'ediff-files3
   "es" 'eshell
   "ev" 'eval-buffer
-  "ff" 'counsel-find-file
-  "fg" 'counsel-rg
-  "fz" 'counsel-fzf
   "gg" 'magit-status
   "ha" 'hs-show-all
   "hb" 'hs-hide-block
