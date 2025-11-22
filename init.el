@@ -63,13 +63,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(autothemer combany-box company company-box consult embark
-                embark-consult evil evil-collection evil-mode flycheck
-                git-mode git-modes highlight-indent-guides lsp-mode
-                lsp-ui magit magit-todos marginalia nerd-icons
-                orderless org-modern prettier-js rainbow-delimiters
-                vertico witch-key yasnippet))
+ '(package-selected-packages nil)
  '(safe-local-variable-values '((lexical-binfing . t))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
