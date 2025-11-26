@@ -57,5 +57,19 @@
   :mode (("\\.js\\'"  . js-ts-mode)
          ("\\.jsx\\'" . js-ts-mode)))
 
+(use-package c-ts-mode
+  :ensure nil
+  :mode (("\\.c\\'" . c-ts-mode)
+         ("\\.h\\'" . c-ts-mode)))
+
+(use-package c++-ts-mode
+  :ensure nil
+  :mode (("\\.cpp\\'" . c++-ts-mode)
+         ("\\.hpp\\'" . c++-ts-mode)))
+
+(use-package csharp-ts-mode
+  :ensure nil
+  :mode ("\\.cs\\'" . csharp-ts-mode))
+
 (provide 'th-treesit)
 ;;; th-treesit.el ends here
