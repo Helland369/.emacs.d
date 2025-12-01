@@ -7,6 +7,10 @@
   :ensure nil
   :config
   (which-key-mode))
- 
+
+(use-package vundo
+  :bind
+  ("C-x u" . vundo))
+
 (provide 'th-misc)
 ;;; th-misc.el ends here
