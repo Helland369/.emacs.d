@@ -8,5 +8,7 @@
 ;; zoom out
 (global-set-key ["C--"] 'text-scale-decrease)
 
+(global-set-key ["C-x C-b"] 'ibuffer)
+
 (provide 'th-keys)
 ;;; th-keys.el ends here
