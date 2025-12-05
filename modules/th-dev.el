@@ -24,11 +24,6 @@
   :init
   (global-flycheck-mode))
 
-(use-package highlight-indent-guides
-  :hook (prog-mode . highlight-indent-guides-mode)
-  :custom
-  (setq highlight-indent-guides-method 'character))
-
 (use-package rainbow-delimiters
   :hook (prog-mode . rainbow-delimiters-mode))
 
