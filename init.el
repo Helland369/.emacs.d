@@ -51,7 +51,7 @@
 (require 'files)
 (require 'th-vertico)
 (require 'th-ui)
-(require 'th-evil)
+;;(require 'th-evil)
 (require 'th-dev)
 (require 'th-misc)
 (require 'th-treesit)
