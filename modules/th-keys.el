@@ -8,7 +8,10 @@
 ;; zoom out
 (global-set-key ["C--"] 'text-scale-decrease)
 
+;; change buffer
 (global-set-key ["C-x C-b"] 'ibuffer)
+
+(global-set-key ["C-,"] 'duplicate-line)
 
 ;; yoinked the scroll half page up/down from here;
 ;; https://www.reddit.com/r/emacs/comments/r7l3ar/how_do_you_scroll_half_a_page/
