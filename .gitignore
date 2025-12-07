@@ -7,3 +7,6 @@
 /.lsp-session-v1
 /projects
 /tree-sitter
+/url
+/eshell
+/.cashe

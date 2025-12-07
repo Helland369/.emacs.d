@@ -12,14 +12,6 @@
 (use-package magit-todos
   :after magit)
 
-(use-package company
-  :ensure t
-  :hook (prog-mode . company-mode)
-  :custom
-  (company-minimum-prefix-length 1)
-  (global-company-mode 1)
-  (setq company-format-margin-function #'company-vscode-dark-icons-margin))
-
 (use-package flycheck
   :init
   (global-flycheck-mode))

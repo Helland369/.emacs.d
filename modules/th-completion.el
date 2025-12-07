@@ -46,5 +46,14 @@
   :init
   (marginalia-mode))
 
-(provide 'th-vertico)
+(use-package corfu
+  :ensure t
+  :hook
+  (prog-mode . corfu-mode)
+  :config
+  (global-corfu-mode 1)
+  :custom
+  (corfu-auto t))
+
+(provide 'th-completion)
 ;;; th-vertico.el ends here

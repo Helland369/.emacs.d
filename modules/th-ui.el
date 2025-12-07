@@ -8,11 +8,6 @@
 
 (load-theme 'kanagawa t)
 
-(use-package nerd-icons
-  :ensure t
-  :custom
-  (nerd-icons-font-family "Symbols Nerd Font Mono"))
-
 (defun th/setup-prettify-symbols ()
   (interactive)
   "Set the symbols to pretify."

@@ -52,7 +52,7 @@
 (require 'th-package)
 (require 'th-keys)
 (require 'files)
-(require 'th-vertico)
+(require 'th-completion)
 (require 'th-ui)
 ;;(require 'th-evil)
 (require 'th-dev)
