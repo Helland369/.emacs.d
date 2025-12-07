@@ -41,6 +41,8 @@
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file 'noerror)
 
+(setq initial-buffer-choice "~/org/agenda/todo.org")
+
 ;; add the theme to a list so emacs can find it
 (add-to-list 'custom-theme-load-path
 	     (expand-file-name "themes" user-emacs-directory))
