@@ -32,5 +32,14 @@
 
 (setq js-indent-level 2)
 
+;; common-lisp
+(use-package sly
+  :ensure t
+  :init
+  (setq inferior-lisp-program "/usr/bin/sbcl")
+  :hook
+  (lisp-mode . sly-mode))
+
+
 (provide 'th-dev)
 ;;; th-dev.el ends here
