@@ -40,6 +40,16 @@
   :hook
   (lisp-mode . sly-mode))
 
+;; guile scheme
+(use-package geiser-guile
+  :ensure t)
+
+(use-package geiser
+  :ensure t
+  :hook (scheme-mode . geiser-mode)
+  :config
+  (setq geiser-guile-binary "/usr/bin/guile")
+  (setq geiser-scheme-implementation '(guile)))
 
 (provide 'th-dev)
 ;;; th-dev.el ends here
