@@ -53,7 +53,7 @@
   :config
   (global-corfu-mode 1)
   :custom
-  (completion--cycle-threshold nil)
+  (completion-cycle-threshold nil)
   (corfu-auto-prefix 2)
   (corfu-auto-delay 0.2)
   (corfu-min-width 80)
@@ -63,3 +63,4 @@
 
 (provide 'th-completion)
 ;;; th-vertico.el ends here
+
