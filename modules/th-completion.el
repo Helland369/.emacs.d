@@ -19,7 +19,7 @@
   (completion-category-defaults nil)
   (completion-category-override
    '((file (styles partial-completion))))
-  (orderless-matching-styles '(orderless-flex)))
+ (orderless-matching-styles '(orderless-flex orderless-literal)))
 
 (use-package consult
   :ensure t
@@ -53,6 +53,12 @@
   :config
   (global-corfu-mode 1)
   :custom
+  (completion--cycle-threshold nil)
+  (corfu-auto-prefix 2)
+  (corfu-auto-delay 0.2)
+  (corfu-min-width 80)
+  (corfu-max-width corfu-min-width)
+  (corfu-cycle nil)
   (corfu-auto t))
 
 (provide 'th-completion)
