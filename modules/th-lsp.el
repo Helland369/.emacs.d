@@ -51,7 +51,11 @@
         lsp-ui-doc-show-with-cursor t
         lsp-ui-doc-show-with-mouse nil
         lsp-ui-doc-side 'right
-        lsp-ui-doc-position 'at-point))
+        lsp-ui-doc-position 'at-point)
+  :bind
+  (("C-c l D" . lsp-ui-doc-show)
+   ("C-c l I" . lsp-ui-imenu)
+   ("C-c l d" . lsp-ui-peek-find-defenition)))
 
 (provide 'th-lsp)
 ;;; th-lsp.el ends here
