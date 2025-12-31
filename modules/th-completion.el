@@ -27,7 +27,20 @@
   (consult-preview-key nil)
   :bind
   (("C-x b" . consult-buffer)
-   ("C-s" . consult-line)))
+   ("C-s" . consult-line)
+   ("C-c k" . consult-kmacro)
+   ("C-c m" . consult-man)
+   ("C-x p b" . consult-project-buffer)
+   ("C-x 4 b" . consult-buffer-other-window)
+   ("C-x 5 b" . consult-buffer-other-frame)
+   ("C-c M-x" . consult-mode-command)
+   ("M-s g" . consult-grep)
+   ("M-s r" . consult-ripgrep)
+   ("M-g i" . consult-imenu)
+   ("M-g I" . consult-imenu-multi)
+   ("M-g m" . consult-mark)
+   ("M-g k" . consult-global-mark)
+   ("M-g g" . consult-goto-line)))
 
 (use-package embark-consult
   :ensure t
@@ -39,7 +52,7 @@
   :ensure t
   :bind
   (("C-." . embark-act)
-   ("M-." . embark-dwin)))
+   ("M-." . embark-dwim)))
 
 (use-package marginalia
   :ensure t
