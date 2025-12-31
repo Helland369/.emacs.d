@@ -61,6 +61,12 @@
   (corfu-cycle nil)
   (corfu-auto t))
 
+(use-package corfu-terminal
+  :ensure t
+  :config
+  (unless (display-graphic-p)
+    (corfu-terminal-mode 1)))
+
 (provide 'th-completion)
 ;;; th-vertico.el ends here
 
