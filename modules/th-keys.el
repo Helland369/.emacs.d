@@ -13,9 +13,12 @@
 
 (global-set-key ["C-,"] 'duplicate-line)
 
+;; move forward within symbols, eg; "", ()
+;; the reverse would be backward-up-list bound to C-M-u
+(global-set-key ["C-M-m"] 'up-list)
+
 ;; yoinked the scroll half page up/down from here;
 ;; https://www.reddit.com/r/emacs/comments/r7l3ar/how_do_you_scroll_half_a_page/
-
 (defun th/scroll-half-page-down ()
   "Scroll half page down and center cursor."
   (interactive)
