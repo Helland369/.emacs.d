@@ -53,10 +53,9 @@
 ;; "import" the config files
 (require 'th-package)
 (require 'th-keys)
-(require 'files)
+(require 'th-files)
 (require 'th-completion)
 (require 'th-ui)
-;;(require 'th-evil)
 (require 'th-dev)
 (require 'th-misc)
 (require 'th-treesit)
