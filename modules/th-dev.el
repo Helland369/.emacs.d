@@ -20,8 +20,10 @@
   :hook (prog-mode . rainbow-delimiters-mode))
 
 (use-package yasnippet
+  :ensure t
   :config
-  (yas-global-mode))
+  (setq yas-snippet-dirs (list (expand-file-name "snippets" user-emacs-directory)))
+  (yas-global-mode 1))
 
 ;; js
 (use-package prettier-js
