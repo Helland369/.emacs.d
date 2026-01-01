@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: ifelif
+# key: ifelif
+# --
+
+if (${1:cond}) {
+$0
+} else if (${2:cond}) {
+
+} else {
+
+}
