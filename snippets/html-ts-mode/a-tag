@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: a-tag
+# key: a
+# --
+
+<a id="${1:ID}">$0</a>

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: input-tag
+# key: input
+# --
+
+<input
+  name="${1:name}"
+  id="${2:ID}"
+  placeholder="${3:placeholder}"
+  type="${4:type}"
+/>
+  $0

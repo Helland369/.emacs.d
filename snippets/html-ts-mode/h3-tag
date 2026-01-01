@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: h3-tag
+# key: h3
+# --
+
+<h3>$0</h3>

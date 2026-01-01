@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: button-tag
+# key: button
+# --
+
+<button id="${1:ID}" type="${2:type}">$0</button>

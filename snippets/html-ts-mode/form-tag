@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: form-tag
+# key: form
+# --
+
+<form
+  name="${1:name}"
+  id="${2:ID}">
+  $0
+</form>

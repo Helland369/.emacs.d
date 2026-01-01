@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: div-tag
+# key: div
+# --
+
+<div id="${1:ID}">$0</div>

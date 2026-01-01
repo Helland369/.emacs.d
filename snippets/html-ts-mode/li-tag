@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: li-tag
+# key: li
+# --
+
+<li>$0</li>

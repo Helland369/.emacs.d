@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ul-tag
+# key: ul
+# --
+
+<ul>$0</ul>
