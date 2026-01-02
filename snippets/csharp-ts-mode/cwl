@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: cwl
+# key: cwl
+# --
+
+Console.WriteLine("${1:txt}");
