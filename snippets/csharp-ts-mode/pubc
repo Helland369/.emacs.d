@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: pubc
+# key: pubc
+# --
+
+public class ${1:name}
+{
+    public ${2:ctor}()
+    {
+        $0
+    }
+}

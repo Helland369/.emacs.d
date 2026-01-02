@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: foreach-loop
+# key: foreach
+# --
+
+foreach (var ${1:var} in ${2:cond})
+{
+    $0
+}

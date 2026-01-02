@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: privint
+# key: privint
+# --
+
+private int ${1:name};

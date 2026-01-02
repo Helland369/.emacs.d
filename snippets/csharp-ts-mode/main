@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: main
+# key: main
+# --
+
+public static class Program
+{
+    static void Main(string[] args)
+    {
+        $0
+    }
+}

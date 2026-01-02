@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: pubint
+# key: pubint
+# --
+
+public int ${1:name} { get; set; }

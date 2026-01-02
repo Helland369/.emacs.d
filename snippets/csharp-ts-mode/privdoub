@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: privdoub
+# key: privdoub
+# --
+
+private double ${1:name};

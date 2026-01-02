@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: ctor
+# key: ctor
+# --
+
+public ${1:ctor}()
+{
+    $0
+}

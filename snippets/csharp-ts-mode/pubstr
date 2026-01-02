@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: pubstr
+# key: pubstr
+# --
+
+public string ${1:name} { get; set; }

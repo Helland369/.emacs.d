@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: pubdoub
+# key: pubdoub
+# --
+
+public double ${1:name} { get; set; }

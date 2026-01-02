@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: privstr
+# key: privstr
+# --
+
+private string ${1:name};
