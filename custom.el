@@ -6,8 +6,9 @@
  '(package-selected-packages
    '(autothemer corfu-terminal embark-consult flycheck geiser-guile
                 git-modes lsp-ui magit-todos marginalia mu4e-alert
-                multiple-cursors orderless org-modern prettier-js
-                rainbow-delimiters sly vertico vundo yasnippet))
+                multiple-cursors orderless org-modern org-msg
+                prettier-js rainbow-delimiters sly vertico vundo
+                yasnippet))
  '(safe-local-variable-values '((lexical-binfing . t))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

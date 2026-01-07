@@ -46,5 +46,18 @@
   (mu4e-alert-set-default-style 'notifications)
   (mu4e-alert-enable-mode-line-display))
 
+(use-package org-msg
+  :ensure t
+  :after mu4e
+  :config
+  (setq mail-user-agent 'mu4e-user-agent
+        org-msg-options "html-postamble:nil H:5 num:nil ^:{} toc:nil author:nil email:nil \\n:t"
+        org-msg-startup "hidestars indent inlineimages"
+        org-msg-default-alternatives '((new . (text html))
+                                       (reply-to-htlm . (text html))
+                                       (reply-to-text . (text)))
+        org-msg-convert-citation t)
+  (org-msg-mode))
+
 (provide 'th-mail)
 ;;; th-mail.el ends here
