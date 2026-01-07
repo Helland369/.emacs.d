@@ -61,3 +61,4 @@
 (require 'th-treesit)
 (require 'th-org)
 (require 'th-lsp)
+(require 'th-mail)

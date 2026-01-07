@@ -29,7 +29,7 @@
   (("C-x b" . consult-buffer)
    ("C-s" . consult-line)
    ("C-c k" . consult-kmacro)
-   ("C-c m" . consult-man)
+   ("C-c m a" . consult-man)
    ("C-x p b" . consult-project-buffer)
    ("C-x 4 b" . consult-buffer-other-window)
    ("C-x 5 b" . consult-buffer-other-frame)
