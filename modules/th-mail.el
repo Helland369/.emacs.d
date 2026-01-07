@@ -10,7 +10,7 @@
   ;;  :commands (mu4e mu4e-compose-new)
   :bind (("C-c m m" . mu4e)
          ("C-c m c" . mu4e-compose-new)
-         ("C-c m s" . mu4e-update-mail-and-inbox))
+         ("C-c m s" . mu4e-update-mail-and-index))
   :config
   (setq mu4e-change-filenames-when-moving t
         mu4e-update-interval (* 10 60)
@@ -36,6 +36,15 @@
 
 (setq auth-sources '(".authinfo"))
 (setq smtpmail-auth-supported '(plain login))
+
+(use-package mu4e-alert
+  :ensure t
+  :after mu4e
+  :config
+  (mu4e-alert-enable-notifications)
+  (mu4e-alert-enable-mode-line-display)
+  (mu4e-alert-set-default-style 'notifications)
+  (mu4e-alert-enable-mode-line-display))
 
 (provide 'th-mail)
 ;;; th-mail.el ends here
