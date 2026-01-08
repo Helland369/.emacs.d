@@ -12,7 +12,8 @@
         (c "https://github.com/tree-sitter/tree-sitter-c")
         (html "https://github.com/tree-sitter/tree-sitter-html")
         (css "https://github.com/tree-sitter/tree-sitter-css")
-        (javascript "https://github.com/tree-sitter/tree-sitter-javascript")))
+        (javascript "https://github.com/tree-sitter/tree-sitter-javascript")
+        (c-sharp "https://github.com/tree-sitter/tree-sitter-c-sharp")))
 
 ;;; maximum colours
 (setq treesit-font-lock-level 4)
