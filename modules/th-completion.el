@@ -14,11 +14,11 @@
 
 (use-package orderless
   :ensure t
-  :custom
-  (completion-styles '(orderless basic))
-  (completion-category-defaults nil)
-  (completion-category-override
-   '((file (styles partial-completion))))
+ :custom
+ (completion-styles '(orderless basic))
+ (completion-category-defaults nil)
+ (completion-category-overrides
+  '((file (styles partial-completion))))
  (orderless-matching-styles '(orderless-flex orderless-literal)))
 
 (use-package consult
@@ -67,7 +67,7 @@
   (global-corfu-mode 1)
   :custom
   (completion-cycle-threshold nil)
-  (corfu-auto-prefix 2)
+  (corfu-auto-prefix 1)
   (corfu-auto-delay 0.2)
   (corfu-min-width 80)
   (corfu-max-width corfu-min-width)
