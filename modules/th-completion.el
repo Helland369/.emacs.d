@@ -21,6 +21,8 @@
   '((file (styles partial-completion))))
  (orderless-matching-styles '(orderless-flex orderless-literal)))
 
+(setq completion-ignore-case t)
+
 (use-package consult
   :ensure t
   :custom
