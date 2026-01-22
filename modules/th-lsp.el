@@ -29,7 +29,8 @@
         lsp-restart 'auto-restart
         lsp-auto-import t
         lsp-enable-file-watchers t
-        lsp-enable-symbol-highlighting t)
+        lsp-enable-symbol-highlighting t
+        lsp-completion-provider :none)
   (setq lsp-csharp-omnisharp-roslyn-binary-path "/usr/bin/omnisharp"))
 
 (use-package lsp-ui
