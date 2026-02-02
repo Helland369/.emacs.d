@@ -13,7 +13,6 @@
   "Set the symbols to pretify."
   (setq prettify-symbols-alist
         '(("!=" . ?≠)
-          ("==" . ?≡)
           ("=>" . ?󰘧)
           ("<=" . ?≤)
           (">=" . ?≥)
@@ -25,3 +24,4 @@
 
 (provide 'th-ui)
 ;;; th-ui.el ends here
+
