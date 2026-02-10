@@ -37,7 +37,9 @@
 
 (use-package json-ts-mode
   :ensure nil
-  :mode (("\\.json\\'" . json-ts-mode)))
+  :mode (("\\.json\\'" . json-ts-mode)
+         ("\\.jsonc\\'" . json-ts-mode)
+         ("\\.jsonl\\'" . json-ts-mode)))
 
 (use-package go-ts-mode
   :ensure nil
