@@ -66,3 +66,4 @@
 (require 'th-lsp)
 (require 'th-mail)
 
+;;; init.el ends here
