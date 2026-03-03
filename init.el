@@ -43,6 +43,9 @@
 
 (setq initial-buffer-choice "~/org/agenda/todo.org")
 
+;; make upcase work (C-x C-u)
+(put 'upcase-region 'disabled nil)
+
 ;; add the theme to a list so emacs can find it
 (add-to-list 'custom-theme-load-path
 	     (expand-file-name "themes" user-emacs-directory))
@@ -62,3 +65,4 @@
 (require 'th-org)
 (require 'th-lsp)
 (require 'th-mail)
+
