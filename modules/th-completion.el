@@ -1,12 +1,12 @@
 ;; -*- lexical-binding: t; -*-
 ;;; Commentary:
-;;; Config that is related to vertico: M-x meny, find file, search buffer, etc
+;;; Config That is related to vertico: M-x menu, find file, search buffer, etc
 ;;; Code:
 
 (use-package vertico
   :ensure t
   :bind (:map vertico-map
-	      ("C-b" . vertico-directory-up))
+	            ("C-b" . vertico-directory-up))
   :config
   (require 'vertico-directory)
   :init
@@ -14,12 +14,12 @@
 
 (use-package orderless
   :ensure t
- :custom
- (completion-styles '(orderless basic))
- (completion-category-defaults nil)
- (completion-category-overrides
-  '((file (styles partial-completion))))
- (orderless-matching-styles '(orderless-flex orderless-literal)))
+  :custom
+  (completion-styles '(orderless basic))
+  (completion-category-defaults nil)
+  (completion-category-overrides
+   '((file (styles partial-completion))
+     (lsp-capf (styles basic orderless)))))
 
 (setq completion-ignore-case t)
 
@@ -63,17 +63,15 @@
 
 (use-package corfu
   :ensure t
-  :hook
-  (prog-mode . corfu-mode)
   :config
   (global-corfu-mode 1)
   :custom
   (completion-cycle-threshold nil)
-  (corfu-auto-prefix 1)
+  (corfu-auto-prefix 2)
   (corfu-auto-delay 0.2)
   (corfu-min-width 80)
   (corfu-max-width corfu-min-width)
-  (corfu-cycle nil)
+  (corfu-cycle t)
   (corfu-auto t))
 
 (use-package corfu-terminal
