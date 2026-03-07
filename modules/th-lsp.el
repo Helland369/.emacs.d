@@ -16,7 +16,7 @@
   (go-ts-mode . lsp-mode)
   :commands lsp
   :config
-  (setq lsp-inlay-hint-enable nil
+  (setq lsp-inlay-hint-enable t
         lsp-eldoc-enable-hover nil
         lsp-eldoc-render-all nil
         eldoc-echo-area-use-multiline-p nil
