@@ -80,6 +80,20 @@
   (unless (display-graphic-p)
     (corfu-terminal-mode 1)))
 
+;; completion for regular text e.g org-mode
+(use-package cape
+  :ensure t
+  :init
+  (add-hook 'completion-at-point-functions #'cape-dabbrev)
+  (add-hook 'completion-at-point-functions #'cape-dict)
+  (add-hook 'completion-at-point-functions #'cape-file)
+  :config
+  (setq cape-dict-file "/usr/share/dict"))
+
+(setq dabbrev-ignore-case t
+      dabbrev-check-other-buffers t
+      dabbrev-upcase-means-case-search t)
+
 (provide 'th-completion)
 ;;; th-vertico.el ends here
 
