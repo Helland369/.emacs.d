@@ -4,6 +4,10 @@
 ;;; Code:
 
 ;;; languages
+(require 'treesit)
+
+;; Run M-x treesit-install-language-gramnar
+;; to install the colors for treesit
 (setq treesit-language-source-alist
       '((cmake "https://github.com/uyha/tree-sitter-cmake")
         (go "https://github.com/tree-sitter/tree-sitter-go")
