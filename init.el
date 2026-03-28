@@ -5,16 +5,16 @@
 		    :family "Iosevka Nerd Font"
 		    :height 120)
 
-;; turn off anoying stuff
+;; Turn off anoying stuff
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
-;; indentation
-(setq-default indent-tabs-mode nil)
-(setq-default tab-width 2)
+;; Indentation
+(setq-default indent-tabs-mode nil
+              tab-width 2)
 
-;; line numbers
+;; Line numbers
 (use-package display-line-numbers
   :ensure nil
   :config
@@ -22,43 +22,50 @@
   (global-display-line-numbers-mode t)
   (global-visual-line-mode t))
 
-;; column numbers
+;; Column numbers
 (column-number-mode t)
 
-;; auto pair symbols, like ", (, {, etc
+;; Auto pair symbols, like ", (, {, etc
 (electric-pair-mode 1)
 
-;; no backup file
-(setq make-backup-files nil)
-
-;; save cursor possition
+;; Save cursor possition
 (save-place-mode 1)
 
-;; no default startup screen
+;; Save minibuffer history
+(savehist-mode 1)
+
+;; Enable mouse in terminal emacs
+(xterm-mouse-mode 1)
+
+;; No default startup screen
 (setq inhibit-startup-screen t)
 
-;; update file in buffer when it changes on disc
+;; No backup file
+(setq make-backup-files nil)
+
+;; Update file in buffer when it changes on disc
 (global-auto-revert-mode t)
 (setq global-auto-revert-non-file-buffers t)
 (setq auto-revert-verbose nil)
 (setq auto-revert-use-notify t)
 
+;; Move custom-file out of init.el
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file 'noerror)
 
+;; Set startup buffer
 (setq initial-buffer-choice "~/org/agenda/todo.org")
 
-;; make upcase work (C-x C-u)
+;; Make upcase work (C-x C-u)
 (put 'upcase-region 'disabled nil)
 
-;; add the theme to a list so emacs can find it
+;; Add the theme to a list so emacs can find it
 (add-to-list 'custom-theme-load-path
 	     (expand-file-name "themes" user-emacs-directory))
 
-;; add the rest of the config to a list so that emacs can find it
+;; Add the rest of the config to a list so that emacs can find it
 (add-to-list 'load-path (expand-file-name "modules" user-emacs-directory))
 
-;; "import" the config files
 (require 'th-package)
 (require 'th-keys)
 (require 'th-files)
