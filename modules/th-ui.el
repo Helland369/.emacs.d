@@ -9,8 +9,8 @@
 (load-theme 'kanagawa t)
 
 (defun th/setup-prettify-symbols ()
-  (interactive)
   "Set the symbols to pretify."
+  (interactive)
   (setq prettify-symbols-alist
         '(("!=" . ?≠)
           ("=>" . ?󰘧)
