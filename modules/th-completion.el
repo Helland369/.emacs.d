@@ -3,6 +3,7 @@
 ;;; Config That is related to vertico: M-x menu, find file, search buffer, etc
 ;;; Code:
 
+;; Ui for M-x menu
 (use-package vertico
   :ensure t
   :bind (:map vertico-map
@@ -12,6 +13,7 @@
   :init
   (vertico-mode))
 
+;; Fuzzy finding
 (use-package orderless
   :ensure t
   :custom
@@ -23,6 +25,7 @@
 
 (setq completion-ignore-case t)
 
+;; Better buffer change, grep/rg, buffer search and more
 (use-package consult
   :ensure t
   :custom
@@ -44,11 +47,13 @@
    ("M-g k" . consult-global-mark)
    ("M-g g" . consult-goto-line)))
 
+;; Integrate embark and consult
 (use-package embark-consult
   :ensure t
   :hook
   (embark-collect-mode . consult-preview-at-point-mode))
 
+;; Do something to the block near the cursor
 (use-package embark
   :after vertico
   :ensure t
@@ -56,11 +61,13 @@
   (("C-." . embark-act)
    ("M-." . embark-dwim)))
 
+;; Shows the doc string in the M-x menu
 (use-package marginalia
   :ensure t
   :init
   (marginalia-mode))
 
+;; The completion box for code, text, etc
 (use-package corfu
   :ensure t
   :config
@@ -74,6 +81,7 @@
   (corfu-cycle t)
   (corfu-auto t))
 
+;; Corfu for the terminal
 (use-package corfu-terminal
   :ensure t
   :config
