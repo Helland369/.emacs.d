@@ -15,10 +15,15 @@
 (setq-default tab-width 2)
 
 ;; line numbers
-(setq display-line-numbers-type 'relative)
-(global-display-line-numbers-mode t)
-(global-visual-line-mode t)
-(setq column-number-mode t)
+(use-package display-line-numbers
+  :ensure nil
+  :config
+  (setq display-line-numbers-type 'relative)
+  (global-display-line-numbers-mode t)
+  (global-visual-line-mode t))
+
+;; column numbers
+(column-number-mode t)
 
 ;; auto pair symbols, like ", (, {, etc
 (electric-pair-mode 1)
