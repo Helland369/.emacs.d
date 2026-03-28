@@ -1,15 +1,18 @@
-;; -*- lexical-binfing: t; -*-
+;; -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;; Config related to development: git, linting, etc
 ;;; Code:
 
 (use-package magit
+  :ensure t
   :custom
   (magit-auto-revert-mode 1))
 
-(use-package git-modes)
+(use-package git-modes
+  :ensure t)
 
 (use-package magit-todos
+  :ensure t
   :after magit)
 
 (use-package flycheck
@@ -18,6 +21,7 @@
   (global-flycheck-mode))
 
 (use-package rainbow-delimiters
+  :ensure t
   :hook (prog-mode . rainbow-delimiters-mode))
 
 (use-package yasnippet
@@ -33,6 +37,8 @@
   :config
   (setq prettier-js-args '("--tab-width" "2")))
 
+;; I've tried different things, but this works for setting
+;; js-ts-mode indent level...
 (setq js-indent-level 2)
 
 ;; common-lisp
