@@ -24,24 +24,22 @@
         lsp-modeline-diagnostics-enable t
         lsp-signature-auto-activate t
         lsp-signature-render-documentation t
-        lsp-completion-show-detail t
-        lsp-completion-show-kind t
         lsp-restart 'auto-restart
-        lsp-auto-import t
         lsp-enable-file-watchers t
         lsp-enable-symbol-highlighting t
-        lsp-completion-provider :none)
-  (setq lsp-csharp-omnisharp-roslyn-binary-path "/usr/bin/omnisharp"))
+        )
+  :custom
+  (setq lsp-csharp-omnisharp-roslyn-binary-path "/usr/bin/omnisharp")
+  (setq lsp-completion-provider :none
+        lsp-auto-import t
+        lsp-completion-show-detail t
+        lsp-completion-show-kind t))
 
 (use-package lsp-ui
   :ensure t
   :hook (lsp-mode . lsp-ui-mode)
   :config
-  (with-eval-after-load 'lsp-ui
-    (define-key lsp-ui-mode-map [remap xref-find-defenitions] #'lsp-ui-peek-find-definitions)
-    (define-key lsp-ui-mode-map [remap xref-find-references] #'lsp-ui-peek-find-references))
   (setq lsp-ui-sideline-enable nil
-        lsp-ui-sideline-margin 0
         lsp-ui-sideline-show-diagnostics nil
         lsp-ui-sideline-show-hover nil
         lsp-ui-sideline-show-code-actions nil
@@ -54,6 +52,11 @@
         lsp-ui-doc-show-with-mouse nil
         lsp-ui-doc-side 'right
         lsp-ui-doc-position 'at-point)
+  :custom
+    (with-eval-after-load 'lsp-ui
+    (define-key lsp-ui-mode-map [remap xref-find-defenitions] #'lsp-ui-peek-find-definitions)
+    (define-key lsp-ui-mode-map [remap xref-find-references] #'lsp-ui-peek-find-references))
+    (setq lsp-ui-sideline-margin 0)
   :bind
   (("C-c l D" . lsp-ui-doc-show)
    ("C-c l I" . lsp-ui-imenu)
