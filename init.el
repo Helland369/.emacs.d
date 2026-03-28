@@ -76,6 +76,7 @@
 (require 'th-treesit)
 (require 'th-org)
 (require 'th-lsp)
+(require 'th-terminal)
 (require 'th-mail)
 
 ;;; init.el ends here

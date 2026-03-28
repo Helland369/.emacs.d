@@ -7,7 +7,7 @@
    '(autothemer cape corfu-terminal embark-consult flycheck geiser-guile
                 git-modes lsp-ui magit-todos marginalia mu4e-alert
                 multiple-cursors orderless org-modern org-msg
-                prettier-js rainbow-delimiters sly vertico vundo
+                prettier-js rainbow-delimiters sly vertico vterm vundo
                 yasnippet))
  '(safe-local-variable-values '((lexical-binfing . t))))
 (custom-set-faces
