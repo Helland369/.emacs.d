@@ -3,7 +3,6 @@
 ;;; treesit/treesitter related config.  Requiers tresitter installed on your computer.
 ;;; Code:
 
-;;; languages
 (require 'treesit)
 
 ;; Run M-x treesit-install-language-gramnar
@@ -17,7 +16,8 @@
         (html "https://github.com/tree-sitter/tree-sitter-html")
         (css "https://github.com/tree-sitter/tree-sitter-css")
         (javascript "https://github.com/tree-sitter/tree-sitter-javascript")
-        (c-sharp "https://github.com/tree-sitter/tree-sitter-c-sharp")))
+        (c-sharp "https://github.com/tree-sitter/tree-sitter-c-sharp")
+        (bash "https://github.com/tree-sitter/tree-sitter-bash/")))
 
 ;;; maximum colours
 (setq treesit-font-lock-level 4)
@@ -32,7 +32,7 @@
         (js-json-mode . json-ts-mode)))
 
 ;;; Configure the ts modes
-;;; if ensure nil, the mode is allready included in emacs 30+
+;;; if ensure nil, the mode is allready included in Emacs 30+
 
 (use-package cmake-ts-mode
   :ensure nil
@@ -77,6 +77,15 @@
 (use-package csharp-ts-mode
   :ensure nil
   :mode ("\\.cs\\'" . csharp-ts-mode))
+
+;; Use bash-ts-mode if the file is bash, else use sh-mode
+(use-package sh-script
+  :ensure nil
+  :config
+  (when (treesit-available-p)
+    (setq major-mode-remap-alist
+          (append '((sh-mode . bash-ts-mode))
+                  major-mode-remap-alist))))
 
 (provide 'th-treesit)
 ;;; th-treesit.el ends here
