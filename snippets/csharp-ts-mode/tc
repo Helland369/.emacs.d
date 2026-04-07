@@ -7,7 +7,7 @@ try
 {
     $0
 }
-catch (${1:err})
+catch (${1:Exception} ${2:ex})
 {
-    ${2:Console.WriteLine();}
+    ${3:Console.WriteLine(${4:ex});}
 }
