@@ -5,10 +5,10 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    '(autothemer cape corfu-terminal embark-consult flycheck geiser-guile
-                git-modes lsp-ui magit-todos marginalia mu4e-alert
-                multiple-cursors orderless org-modern org-msg
-                prettier-js rainbow-delimiters sly vertico vterm vundo
-                yasnippet))
+                git-modes hl-todo lsp-ui magit magit-todos marginalia
+                mu4e-alert multiple-cursors orderless org-modern
+                org-msg prettier-js rainbow-delimiters sly vertico
+                vterm vundo yasnippet))
  '(safe-local-variable-values '((lexical-binfing . t))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

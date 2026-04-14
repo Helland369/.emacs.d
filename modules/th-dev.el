@@ -11,9 +11,24 @@
 (use-package git-modes
   :ensure t)
 
+;; See todos in magit
 (use-package magit-todos
   :ensure t
-  :after magit)
+  :after magit
+  :config
+  (setq magit-todos-keywords '("TODO" "FIXME" "DEBUG" "HACK"))
+  (magit-todos-mode 1))
+
+;; Highlight TODO FIXME DEBUG HACK in comments
+(use-package hl-todo
+  :ensure t
+  :hook (prog-mode . hl-todo-mode)
+  :config
+  (setq hl-todo-keyword-faces
+        '(("TODO"  . "#FF0000")
+          ("FIXME" . "#FF0000")
+          ("DEBUG" . "#A020F0")
+          ("HACK"  . "#E8B71A"))))
 
 (use-package flycheck
   :ensure t
