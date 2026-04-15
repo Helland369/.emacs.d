@@ -7,8 +7,8 @@
   :init
   (setq lsp-keymap-prefix "C-c l")
   :hook
-  (c-ts-mode . lsp-mode)
-  (c++-ts-mode . lsp-mode)
+  (c--mode . lsp-mode)
+  (c++-mode . lsp-mode)
   (csharp-ts-mode . lsp-mode)
   (js-ts-mode . lsp-mode)
   (html-ts-mode . lsp-mode)
