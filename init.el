@@ -59,6 +59,9 @@
 ;; Make upcase work (C-x C-u)
 (put 'upcase-region 'disabled nil)
 
+;; Make downcase work (C-x C-l)
+(put 'downcase-region 'disabled nil)
+
 ;; Add the theme to a list so emacs can find it
 (add-to-list 'custom-theme-load-path
 	     (expand-file-name "themes" user-emacs-directory))
