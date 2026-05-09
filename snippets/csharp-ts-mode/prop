@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: prop
+# key: prop
+# --
+
+public ${1:type} ${2:name} { get; set; }

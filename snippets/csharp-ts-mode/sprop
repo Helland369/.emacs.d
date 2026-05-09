@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: sprop
+# key: sprop
+# --
+static ${1:type} ${2:name} { get; set; }

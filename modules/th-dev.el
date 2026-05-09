@@ -79,6 +79,9 @@
 (use-package protobuf-mode
   :ensure t)
 
+;; csharp
+(use-package csproj-mode
+  :ensure t)
 
 (provide 'th-dev)
 ;;; th-dev.el ends here
