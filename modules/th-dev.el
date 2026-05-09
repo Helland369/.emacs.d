@@ -75,5 +75,10 @@
   (setq geiser-guile-binary "/usr/bin/guile")
   (setq geiser-scheme-implementation '(guile)))
 
+;; protobuf
+(use-package protobuf-mode
+  :ensure t)
+
+
 (provide 'th-dev)
 ;;; th-dev.el ends here
