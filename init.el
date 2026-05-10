@@ -67,7 +67,7 @@
 	     (expand-file-name "themes" user-emacs-directory))
 
 ;; Add the rest of the config to a list so that emacs can find it
-(add-to-list 'load-path (expand-file-name "modules" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
 (require 'th-package)
 (require 'th-keys)
