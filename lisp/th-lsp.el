@@ -28,7 +28,7 @@
         lsp-enable-file-watchers t
         lsp-enable-symbol-highlighting t)
   :custom
-  ;;  (setq lsp-csharp-omnisharp-roslyn-binary-path "/usr/bin/omnisharp")
+  ;; (setq lsp-csharp-omnisharp-roslyn-binary-path "/usr/bin/omnisharp")
   (setq lsp-completion-provider :none
         lsp-auto-import t
         lsp-completion-show-detail t

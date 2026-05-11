@@ -4,7 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(autothemer cape corfu-terminal csproj-moce csproj-mode
+   '(autothemer cape corfu-terminal csproj-moce csproj-mode eat
                 embark-consult flycheck geiser-guile git-modes hl-todo
                 lsp-ui magit magit-todos marginalia mu4e-alert
                 multiple-cursors orderless org-modern org-msg

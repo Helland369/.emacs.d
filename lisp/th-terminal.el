@@ -10,6 +10,9 @@
         vterm-max-scrollback 10000
         vterm-always-compile-module t))
 
+(use-package eat
+  :ensure t)
+
 (use-package term
   :ensure nil
   :config
