@@ -17,7 +17,8 @@
         (css "https://github.com/tree-sitter/tree-sitter-css")
         (javascript "https://github.com/tree-sitter/tree-sitter-javascript")
         (c-sharp "https://github.com/tree-sitter/tree-sitter-c-sharp")
-        (bash "https://github.com/tree-sitter/tree-sitter-bash/")))
+        (bash "https://github.com/tree-sitter/tree-sitter-bash/")
+        (python "https://github.com/tree-sitter/tree-sitter-python")))
 
 ;; (use-package treesit-auto
 ;;   :ensure t)
@@ -30,7 +31,8 @@
       '((html-mode    . html-ts-mode)
         (css-mode     . css-ts-mode)
         (js-mode      . js-ts-mode)
-        (js-json-mode . json-ts-mode)))
+        (js-json-mode . json-ts-mode)
+        (python-mode  . python-ts-mode)))
 
 ;; these ts modes are broken after emacs 30.2
 ;; (c++-mode     . c++-ts-mode)

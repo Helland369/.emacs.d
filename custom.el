@@ -6,10 +6,10 @@
  '(package-selected-packages
    '(autothemer cape corfu-terminal csproj-moce csproj-mode eat
                 embark-consult flycheck geiser-guile git-modes hl-todo
-                lsp-ui magit magit-todos marginalia mu4e-alert
-                multiple-cursors orderless org-modern org-msg
-                prettier-js protobuf-mode rainbow-delimiters sly
-                vertico vterm vundo yasnippet))
+                lsp-pyright lsp-ui magit magit-todos marginalia
+                mu4e-alert multiple-cursors orderless org-modern
+                org-msg prettier-js protobuf-mode rainbow-delimiters
+                sly vertico vterm vundo yasnippet))
  '(safe-local-variable-values '((lexical-binfing . t))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

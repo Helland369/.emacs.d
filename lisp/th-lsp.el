@@ -2,6 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 
+
 (use-package lsp-mode
   :ensure t
   :init
@@ -60,6 +61,22 @@
   (("C-c l D" . lsp-ui-doc-show)
    ("C-c l I" . lsp-ui-imenu)
    ("C-c l d" . lsp-ui-peek-find-defenition)))
+
+;; python
+(use-package lsp-pyright
+  :ensure t
+  :init
+  (setq lsp-pyright-langserver-command "basedpyright")
+  :config
+  (setq lsp-pyright-type-checking-mode "standard"
+        lsp-pyright-basedpyright-inlay-hints-variable-types t
+        lsp-pyright-basedpyright-inlay-hints-call-argument-names t
+        lsp-pyright-basedpyright-inlay-hints-function-return-types t)
+  :hook
+  (python-ts-mode . (lambda ()
+                      (require 'lsp-pyright)
+                      (lsp-deferred))))
+
 
 (provide 'th-lsp)
 ;;; th-lsp.el ends here
