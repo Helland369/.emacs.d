@@ -4,12 +4,11 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(autothemer cape corfu-terminal csproj-moce csproj-mode eat
-                embark-consult flycheck geiser-guile git-modes hl-todo
-                lsp-pyright lsp-ui magit magit-todos marginalia
-                mu4e-alert multiple-cursors orderless org-modern
-                org-msg prettier-js protobuf-mode rainbow-delimiters
-                sly vertico vterm vundo yasnippet))
+   '(cape corfu-terminal csproj-mode eat embark-consult flycheck
+          geiser-guile git-modes lsp-pyright lsp-ui magit-todos
+          marginalia mu4e-alert multiple-cursors orderless org-modern
+          org-msg prettier-js protobuf-mode rainbow-delimiters sly
+          vertico vterm vundo yasnippet))
  '(safe-local-variable-values '((lexical-binfing . t))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
