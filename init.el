@@ -1,14 +1,6 @@
+;; -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;; Code:
-
-(set-face-attribute 'default nil
-		    :family "Iosevka Nerd Font"
-		    :height 120)
-
-;; Turn off anoying stuff
-(menu-bar-mode -1)
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
 
 ;; Indentation
 (setq-default indent-tabs-mode nil
