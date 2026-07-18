@@ -35,10 +35,11 @@
   :ensure nil
   :hook
   ((text-mode . flyspell-mode)
-   (org-mode  . flyspell-mode))
+   (org-mode  . flyspell-mode)
+   (prog-mode . flyspell-prog-mode)))
   :custom
   (custom-set-faces
-   '(flyspell-incorrect ((t (:underline (:style wave :color "red")))))))
+   '(flyspell-incorrect ((t (:underline (:style wave :color "red"))))))
 
 ;; Deal with trailing white space
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
