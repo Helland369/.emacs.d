@@ -71,9 +71,9 @@
 (use-package geiser
   :ensure t
   :hook (scheme-mode . geiser-mode)
-  :config
-  (setq geiser-guile-binary "/usr/bin/guile")
-  (setq geiser-scheme-implementation '(guile)))
+  :custom
+  (let guile-path (getenv "GUILE_BIN_PATH"))
+  (setq geiser-guile-binary guile-path))
 
 ;; protobuf
 (use-package protobuf-mode
