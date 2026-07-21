@@ -73,5 +73,6 @@
 (require 'th-lsp)
 (require 'th-terminal)
 (require 'th-mail)
+(require 'th-system)
 
 ;;; init.el ends here
