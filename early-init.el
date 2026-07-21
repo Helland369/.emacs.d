@@ -2,6 +2,9 @@
 ;;; Commentary:
 ;;; Code:
 
+;; lsp-mode plists
+(setenv "LSP_USE_PLISTS" "true")
+
 ;; temporarily set massive GC for faster startup
 (setq gc-cons-threshold most-positive-fixnum
       gc-cons-percentage 0.6)
