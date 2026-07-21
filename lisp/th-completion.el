@@ -7,7 +7,7 @@
 (use-package vertico
   :ensure t
   :bind (:map vertico-map
-	            ("C-b" . vertico-directory-up))
+	            ("C-u" . vertico-directory-up))
   :config
   (require 'vertico-directory)
   :init
@@ -103,5 +103,4 @@
       dabbrev-upcase-means-case-search t)
 
 (provide 'th-completion)
-;;; th-vertico.el ends here
-
+;;; th-completion.el ends here
