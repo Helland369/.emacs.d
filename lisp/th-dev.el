@@ -57,10 +57,14 @@
 (setq js-indent-level 2)
 
 ;; common-lisp
+
+(defvar th/sbcl-path (getenv "SBCL_PATH")
+  "Get path to sbcl, this makes it easier on Guix.")
+
 (use-package sly
   :ensure t
   :init
-  (setq inferior-lisp-program "/usr/bin/sbcl")
+  (setq inferior-lisp-program th/sbcl-path)
   :hook
   (lisp-mode . sly-mode))
 
