@@ -17,8 +17,9 @@
 ;; the reverse would be backward-up-list bound to C-M-u
 (global-set-key ["C-M-m"] 'up-list)
 
-;; yoinked the scroll half page up/down from here;
-;; https://www.reddit.com/r/emacs/comments/r7l3ar/how_do_you_scroll_half_a_page/
+;; enable/disable tab bar
+(global-set-key ["C-c t b"] 'tab-bar-mode)
+
 (defun th/scroll-half-page-down ()
   "Scroll half page down and center cursor."
   (interactive)
@@ -45,4 +46,3 @@
 (global-set-key ["C-v"] 'th/scroll-half-page-up)
 
 (provide 'th-keys)
-;;; th-keys.el ends here
