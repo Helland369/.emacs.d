@@ -93,7 +93,8 @@
   :bind (("C-c f f" . fzf)
          ("C-c f g" . fzf-grep))
   :config
-  (setq fzf/args "--color=bg:#000000,bg+:#1a1a1a \
+  (setq fzf/args "--preview 'head -500 {}' \
+                  --color=bg:#000000,bg+:#1a1a1a \
                   --color=fg:#ffffff,fg+:#ffffff \
                   --color=hl:#ffdf00,hl+:#ffdf00 \
                   --color=info:#00d3d0,prompt:#2fafff \
