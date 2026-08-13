@@ -4,7 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(cape corfu-terminal csproj-mode eat embark-consult flycheck
+   '(cape corfu-terminal csproj-mode eat embark-consult flycheck fzf
           geiser-guile git-modes lsp-mode lsp-pyright lsp-ui
           magit-todos marginalia mu4e-alert multiple-cursors orderless
           org-modern org-msg popper prettier-js protobuf-mode

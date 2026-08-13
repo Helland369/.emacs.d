@@ -87,5 +87,24 @@
 (use-package csproj-mode
   :ensure t)
 
+;; fzf in Emacs
+(use-package fzf
+  :ensure t
+  :bind (("C-c f f" . fzf)
+         ("C-c f g" . fzf-grep))
+  :config
+  (setq fzf/args "--color=bg:#000000,bg+:#1a1a1a \
+                  --color=fg:#ffffff,fg+:#ffffff \
+                  --color=hl:#ffdf00,hl+:#ffdf00 \
+                  --color=info:#00d3d0,prompt:#2fafff \
+                  --color=pointer:#ffdf00,marker:#00c000 \
+                  --color=spinner:#2fafff,header:#00d3d0 \
+                  --color=border:#333333,label:#2fafff \
+                  --color=query:#ffffff \
+                 "
+        fzf/executable "fzf"
+        fzf/git-grep-args "-i --line-number %s"
+        fzf/grep-command "grep -rn"))
+
 (provide 'th-dev)
 ;;; th-dev.el ends here
