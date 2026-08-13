@@ -8,6 +8,7 @@
 
 (use-package eat
   :ensure t
+  :bind ("C-c t e" . eat)
   :init
   (setq explicit-shell-file-name th/shell-path))
 
@@ -21,10 +22,17 @@
   (interactive)
   (term (getenv "SHELL")))
 
+(global-set-key ["C-c t t"] 'th/term)
+
 (use-package shell
   :ensure nil
+  :bind ("C-c t s" . shell)
   :config
   (setq explicit-shell-file-name th/shell-path))
+
+(use-package eshell
+  :ensure nil
+  :bind ("C-c t E" . eshell))
 
 (provide 'th-terminal)
 ;;; th-terminal.el ends here
