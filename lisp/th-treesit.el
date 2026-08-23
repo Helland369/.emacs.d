@@ -82,9 +82,9 @@
 ;;   :mode (("\\.cpp\\'" . c++-ts-mode)
 ;;          ("\\.hpp\\'" . c++-ts-mode)))
 
-(use-package csharp-ts-mode
-  :ensure nil
-  :mode ("\\.cs\\'" . csharp-ts-mode))
+;; (use-package csharp-ts-mode
+;;   :ensure nil
+;;   :mode ("\\.cs\\'" . csharp-ts-mode))
 
 ;; Use bash-ts-mode if the file is bash, else use sh-mode
 (use-package sh-script
