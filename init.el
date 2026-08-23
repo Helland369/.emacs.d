@@ -74,5 +74,6 @@
 (require 'th-terminal)
 (require 'th-mail)
 (require 'th-system)
+(require 'th-numbers)
 
 ;;; init.el ends here
