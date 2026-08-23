@@ -21,7 +21,10 @@
 
 ;: load guix.el if system is a guix system
 (when (string-equal (th/get-gnu-linux-distro) "Guix System")
-  (require 'guix nil t))
+  (use-package guix
+    :ensure t))
+
+  ;; (require 'guix nil t))
 
 (provide 'th-system)
 ;;; th-system.el ends here
