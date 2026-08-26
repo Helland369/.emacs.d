@@ -89,5 +89,8 @@
 (use-package csproj-mode
   :ensure t)
 
+;; Avalonia axaml
+(add-to-list 'auto-mode-alist '("\\.[aa]xaml\\'" . nxml-mode ))
+
 (provide 'th-dev)
 ;;; th-dev.el ends here

@@ -8,13 +8,14 @@
   :init
   (setq lsp-keymap-prefix "C-c l")
   :hook
-  (c--mode . lsp-mode)
-  (c++-mode . lsp-mode)
-  (csharp-mode . lsp-mode)
-  (js-ts-mode . lsp-mode)
+  (c--mode      . lsp-mode)
+  (c++-mode     . lsp-mode)
+  (csharp-mode  . lsp-mode)
+  (js-ts-mode   . lsp-mode)
   (html-ts-mode . lsp-mode)
-  (css-ts-mode . lsp-mode)
-  (go-ts-mode . lsp-mode)
+  (css-ts-mode  . lsp-mode)
+  (go-ts-mode   . lsp-mode)
+  (nxml-mode    . lsp-mode)
   :commands lsp
   :config
   (setq lsp-inlay-hint-enable t
