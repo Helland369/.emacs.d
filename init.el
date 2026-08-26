@@ -68,7 +68,7 @@
 (require 'th-ui)
 (require 'th-dev)
 (require 'th-misc)
-(require 'th-treesit)
+;; (require 'th-treesit)
 (require 'th-org)
 (require 'th-lsp)
 (require 'th-terminal)

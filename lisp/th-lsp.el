@@ -11,10 +11,6 @@
   (c--mode      . lsp-mode)
   (c++-mode     . lsp-mode)
   (csharp-mode  . lsp-mode)
-  (js-ts-mode   . lsp-mode)
-  (html-ts-mode . lsp-mode)
-  (css-ts-mode  . lsp-mode)
-  (go-ts-mode   . lsp-mode)
   (nxml-mode    . lsp-mode)
   :commands lsp
   :config
