@@ -63,7 +63,7 @@
 
 (require 'th-package)
 (require 'th-keys)
-(require 'th-files)
+(require 'th-dired)
 (require 'th-completion)
 (require 'th-ui)
 (require 'th-dev)

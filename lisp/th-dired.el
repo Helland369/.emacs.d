@@ -11,5 +11,6 @@
   (setq dired-kill-when-opening-new-dired-buffer t
         dired-listing-switches "-agho --group-directories-first"))
 
-(provide 'th-files)
-;;; th-files.el ends here
+
+(provide 'th-dired)
+;;; th-dired.el ends here
