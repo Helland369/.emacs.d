@@ -20,7 +20,7 @@
 
 ;; set font and font size
 (set-face-attribute 'default nil
-		    :family "Iosevka"
+		    :family "Iosevka Nerd Font"
 		    :height 120)
 
 ;; Turn off ui elements
