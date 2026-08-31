@@ -34,5 +34,17 @@
   :ensure nil
   :bind ("C-c t E" . eshell))
 
+(use-package ghostel
+  :ensure t
+  :bind (("C-c t g g" . ghostel)
+         :map ghostel-semi-char-mode-map
+         ("M-s" . consult-line)))
+
+(use-package ghostel-eshell
+  :hook (eshell-load . ghostel-eshell-visual-command-mode))
+
+(use-package ghostel-compile
+  :hook (after-init . ghostel-compile-global-mode))
+
 (provide 'th-terminal)
 ;;; th-terminal.el ends here
