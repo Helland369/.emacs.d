@@ -81,13 +81,6 @@
   (corfu-cycle t)
   (corfu-auto t))
 
-;; Corfu for the terminal
-(use-package corfu-terminal
-  :ensure t
-  :config
-  (unless (display-graphic-p)
-    (corfu-terminal-mode 1)))
-
 ;; completion for regular text e.g org-mode
 (use-package cape
   :ensure t
