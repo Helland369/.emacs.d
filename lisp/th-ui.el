@@ -26,6 +26,7 @@
         '(eat-mode
           term-mode
           eshell-mode
+          ghostel-mode
           grep-mode
           geiser-repl-mode
           sly-mrepl-mode))
