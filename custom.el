@@ -13,7 +13,9 @@
           prettier-js protobuf-mode rainbow-delimiters sly vertico
           vundo xdg-launcher yasnippet))
  '(package-vc-selected-packages
-   '((xdg-launcher :url "https://github.com/emacs-exwm/xdg-launcher")))
+   '((ezf :url "https://github.com/mickeynp/ezf" :branch "master")
+     (exf :url "https://github.com/mickeynp/ezf")
+     (xdg-launcher :url "https://github.com/emacs-exwm/xdg-launcher")))
  '(safe-local-variable-values '((lexical-binfing . t))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
