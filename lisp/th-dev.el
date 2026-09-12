@@ -96,5 +96,12 @@
 ;; Avalonia axaml
 (add-to-list 'auto-mode-alist '("\\.[aa]xaml\\'" . nxml-mode ))
 
+;; csharp mode
+
+(use-package csharp-mode
+  :ensure nil
+  :config
+  (setq c-basic-offset 2))
+
 (provide 'th-dev)
 ;;; th-dev.el ends here
