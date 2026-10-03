@@ -38,8 +38,8 @@
   (global-flycheck-annotate-mode t)
   (setq flycheck-annotate-current-line-style 'eol
         flycheck-annotate-other-lines-style nil
-        flycheck-annotate-fix-marker t
-        flycheck-annotate-background t))
+        flycheck-annotate-fix-marker t))
+        ;; flycheck-annotate-background t))
 
 (use-package rainbow-delimiters
   :ensure t
